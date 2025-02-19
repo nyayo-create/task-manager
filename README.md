@@ -9,4 +9,4 @@
 - Persist data using localStorage.
 
 ## Deployment
-The app is deployed on Vercel: [Task Manager](https://your-vercel-url.vercel.app)
+The app is deployed on Vercel: [Task Manager](https://task-manager-beige-eight.vercel.app/)
