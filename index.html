@@ -4,32 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Task Manager</h1>
+        <div class="top">
+            
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <p>Website To-Do</p>
+        </div>
+        <br>
+        <br>
         <form id="taskForm">
-            <input type="text" id="taskTitle" placeholder="Task Title" required>
-            <input type="text" id="taskDescription" placeholder="Task Description">
-            <input type="date" id="taskDueDate" required>
-            <button type="submit">+ Add Task</button>
-        </form>
-        <div>
-            <label for="filterTasks">Filter:</label>
+
+        <div class="selection">
+            <label for="filterTasks" class="filter">Filter:</label>
             <select id="filterTasks">
                 <option value="all">All</option>
                 <option value="completed">Completed</option>
                 <option value="incomplete">Incomplete</option>
             </select>
-            <label for="sortTasks">Sort by:</label>
+            <label for="sortTasks" class="sort">Sort:</label>
+
             <select id="sortTasks">
                 <option value="dueDate">Due Date</option>
                 <option value="title">Title</option>
             </select>
+
         </div>
+        <br>
+       <div class="data">
+        <input type="text" id="taskTitle" placeholder="Task Title" required>
+        <input type="date" id="taskDueDate" required>
+
+       </div>
+            <button type="submit">+ Add Task</button>
+       
+       
         <ul id="taskList"></ul>
+    </form>
     </div>
-    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
