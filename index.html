@@ -8,17 +8,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="top">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <p>Website To-Do</p>
+    </div>
+    
     <div class="container">
-        <div class="top">
-            
-            <i class="fa fa-bars" aria-hidden="true"></i>
-            <p>Website To-Do</p>
-        </div>
-        <br>
-        <br>
-        <form id="taskForm">
-
-        <div class="selection">
+        <form id="taskForm" class="task-form">
+            <div class="form-group">
+                <label for="taskTitle">Task Title:</label>
+                <input type="text" id="taskTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="taskDueDate">Due Date:</label>
+                <input type="date" id="taskDueDate" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="save-btn">Save Task</button>
+            </div>
+        </form>
+    
+    
+        <div class="filter-sort-container">
             <label for="filterTasks" class="filter">Filter:</label>
             <select id="filterTasks">
                 <option value="all">All</option>
@@ -26,24 +37,17 @@
                 <option value="incomplete">Incomplete</option>
             </select>
             <label for="sortTasks" class="sort">Sort:</label>
-
             <select id="sortTasks">
                 <option value="dueDate">Due Date</option>
                 <option value="title">Title</option>
             </select>
-
         </div>
-        <br>
-       <div class="data">
-        <input type="text" id="taskTitle" placeholder="Task Title" required>
-        <input type="date" id="taskDueDate" required>
-
-       </div>
-            <button type="submit">+ Add Task</button>
-       
-       
-        <ul id="taskList"></ul>
-    </form>
+    
+     
+        <div class="task-list-container">
+            <ul id="taskList"></ul>
+        </div>
+        <button id="show-form-btn">+ Add Task</button>
     </div>
     <script type="module" src="./scripts/main.js"></script>
 </body>
