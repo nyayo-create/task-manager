@@ -60,7 +60,7 @@ body {
     border-radius: 24px;
     cursor: pointer;
     transition: background 0.3s;
-    margin-top: 3px;
+    margin-top: px;
     transform: translateY(75%);
     left: 50%;
    
@@ -74,29 +74,34 @@ body {
 .task-form {
     display: none;
     flex-direction: column;
-    gap: 100px;
-    margin-top: 3px;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+
 }
 
 .task-form .form-group {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .task-form input,
 .task-form textarea {
     width: 90%;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #0f0101;
     border-radius: 6px;
     font-size: 12px;
 }
 
 .task-form .save-btn {
-    width: 80%;
+    width: 40%;
     background-color: #af7deb;;
     color: #ffffff;
     border: none;
-    padding: 0px;
+    padding: 10px;
     font-size: 12px;
     font-weight: bold;
     border-radius: 24px;
@@ -173,7 +178,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 05px 0;
+    margin: 0.5px 0;
 }
 
 .filter-sort-container select {
